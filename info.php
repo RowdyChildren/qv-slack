@@ -85,7 +85,7 @@ include_once ("freshservice-api/RestCommands.class.php");
       ),
       'color' => $pc[$response["helpdesk_ticket"]["status_name"]],
     );
-
+echo $pc[$response["helpdesk_ticket"]["status_name"]];
 
 
 
