@@ -102,14 +102,11 @@ var_dump ($fields);
 */
 $fields_string = json_encode($fields);
 
-echo($fields_string);
 
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL, $url);
 curl_setopt($ch,CURLOPT_POST, count($fields));
 curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
 $response = curl_exec($ch);
-var_dump($response);
-//close connection
 curl_close($ch);
 ?>
