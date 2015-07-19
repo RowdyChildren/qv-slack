@@ -37,6 +37,7 @@ include_once ("freshservice-api/RestCommands.class.php");
 			"Urgent" => "#ff400f"
 			
 			);
+			var_dump($pc);
         $info =  array (
 
       'fallback' => 'ReferenceError - UI is not definied: https://honeybadger.io/path/to/event/',
