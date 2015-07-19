@@ -55,7 +55,7 @@ class Freshservice {
 			throw new FreshserviceException('HTTP error in Excec method');
 		}
 	
-		return json_decode($httpResponse);
+		return json_decode($httpResponse, true );
 	}
 
 	public function Close() {
